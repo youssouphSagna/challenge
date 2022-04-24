@@ -1,4 +1,9 @@
-package fr.wedoogift.domain;
+package fr.wedoogift.domain.entity;
+
+import fr.wedoogift.domain.valueobject.Amount;
+import fr.wedoogift.domain.valueobject.Deposit;
+import fr.wedoogift.domain.valueobject.Gift;
+import fr.wedoogift.domain.valueobject.Meal;
 
 import java.util.UUID;
 

@@ -1,4 +1,4 @@
-package fr.wedoogift.domain;
+package fr.wedoogift.domain.valueobject;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

@@ -1,4 +1,4 @@
-package fr.wedoogift.domain;
+package fr.wedoogift.domain.valueobject;
 
 import java.util.Objects;
 
@@ -34,5 +34,18 @@ public class Amount {
         }
 
         this.value = result;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Amount amount = (Amount) o;
+        return Objects.equals(value, amount.value);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(value);
     }
 }

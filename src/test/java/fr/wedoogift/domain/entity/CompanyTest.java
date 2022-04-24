@@ -1,5 +1,8 @@
-package fr.wedoogift.domain;
+package fr.wedoogift.domain.entity;
 
+import fr.wedoogift.domain.valueobject.Amount;
+import fr.wedoogift.domain.valueobject.Deposit;
+import fr.wedoogift.domain.valueobject.Gift;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -37,7 +40,6 @@ class CompanyTest {
 
         Employee employee = new Employee();
 
-        company.distributeMeal(employee, deposit.amount);
-
+        company.distributeMeal(employee, deposit.getAmount());
     }
 }

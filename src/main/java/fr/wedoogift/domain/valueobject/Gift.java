@@ -1,4 +1,4 @@
-package fr.wedoogift.domain;
+package fr.wedoogift.domain.valueobject;
 
 import java.time.LocalDate;
 

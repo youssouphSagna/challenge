@@ -1,5 +1,8 @@
-package fr.wedoogift.domain;
+package fr.wedoogift.domain.entity;
 
+import fr.wedoogift.domain.valueobject.Amount;
+import fr.wedoogift.domain.valueobject.Gift;
+import fr.wedoogift.domain.valueobject.Meal;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

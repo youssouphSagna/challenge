@@ -1,4 +1,7 @@
-package fr.wedoogift.domain;
+package fr.wedoogift.domain.entity;
+
+import fr.wedoogift.domain.valueobject.Amount;
+import fr.wedoogift.domain.valueobject.Deposit;
 
 import java.util.ArrayList;
 import java.util.List;
