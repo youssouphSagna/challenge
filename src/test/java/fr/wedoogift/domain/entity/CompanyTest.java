@@ -3,6 +3,7 @@ package fr.wedoogift.domain.entity;
 import fr.wedoogift.domain.valueobject.Amount;
 import fr.wedoogift.domain.valueobject.Deposit;
 import fr.wedoogift.domain.valueobject.Gift;
+import fr.wedoogift.domain.valueobject.Meal;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -32,7 +33,7 @@ class CompanyTest {
 
     @Test
     @DisplayName("Should distribute Gift deposit to employee")
-    void distributeDeposit() {
+    void distributeGift() {
         Company company = new Company("Apple");
         company.credit(new Amount(500D));
 
@@ -40,9 +41,27 @@ class CompanyTest {
 
         Employee employee = new Employee();
 
-        company.distributeMeal(employee, deposit.getAmount());
+        company.distributeGift(employee, deposit.getAmount());
 
         Assertions.assertEquals(100D , employee.calculateBalance());
         Assertions.assertEquals(400D , company.getBalance().getValue());
+    }
+
+
+
+    @Test
+    @DisplayName("Should distribute Meal deposit to employee")
+    void distributeMeal() {
+        Company company = new Company("AWS");
+        company.credit(new Amount(1000D));
+
+        Deposit deposit = new Meal(new Amount(200D));
+
+        Employee employee = new Employee();
+
+        company.distributeMeal(employee, deposit.getAmount());
+
+        Assertions.assertEquals(200D , employee.calculateBalance());
+        Assertions.assertEquals(800D , company.getBalance().getValue());
     }
 }
