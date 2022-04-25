@@ -41,5 +41,8 @@ class CompanyTest {
         Employee employee = new Employee();
 
         company.distributeMeal(employee, deposit.getAmount());
+
+        Assertions.assertEquals(100D , employee.calculateBalance());
+        Assertions.assertEquals(400D , company.getBalance().getValue());
     }
 }
