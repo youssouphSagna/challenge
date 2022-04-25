@@ -7,9 +7,10 @@ J'ai utilié le Domain Driven Design (DDD) comme standard de développement.
 ## Concepts
 Le DDD est un concept de structuration du code autour du domaine métier. Il est très utile pour créer des applications orientées process métier. Ses buts sont de
 
-centrer les problématiques autour du domaine et de la logique métier
-placer les designs complexes sur le modèle du domaine
-créer une collaboration entre les experts techniques et métier pour partager autour du modèle du domaine
++ Centrer les problématiques autour du domaine et de la logique métier
++ Placer les designs complexes sur le modèle du domaine
++ Créer une collaboration entre les experts techniques et métier pour partager autour du modèle du domaine
+
 Ce dernier point met en avant la notion de langage ubiquitaire, où les noms des objets dans le code seront les mêmes que ceux utilisés par les experts métier.
 
 
@@ -28,7 +29,9 @@ des objets métier, mais elle peut détenir l’état de la progression d’une 
 
 ### Couche Domaine
 Cette couche contient les informations sur le domaine. C’est le cœur du logiciel métier. L’état des objets métier est renfermé ici.
-La persistance des objets métier et peut-être aussi leur état est délégué à la couche infrastructure. 
+La persistance des objets métier et peut-être aussi leur état est délégué à la couche infrastructure.
+
+
 
 
 ### Couche Infrastructure
